@@ -32,7 +32,7 @@ exports.handler = (req, ctx, res) => {
   const { link } = JSON.parse(req.body);
 
   // generate shortcode
-  const code = randomString(5);
+  const code = randomString(3);
 
   // generate timestamp
   const created_at = admin.firestore.Timestamp.now();
