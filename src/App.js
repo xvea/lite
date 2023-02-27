@@ -1,7 +1,6 @@
 import './App.css';
-import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
 
-import { Navbar, Title, LinkInput, LinkOutput, Wave, Error, Spinner } from './components';
+import { Navbar, Title, LinkInput, LinkOutput, Error } from './components';
 
 function App() {
   return (
@@ -9,10 +8,8 @@ function App() {
       <Navbar />
       <Title />
       <LinkInput />
-      <Spinner />
       <Error />
       <LinkOutput />
-      <Wave />
     </>
   );
 }
