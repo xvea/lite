@@ -31,7 +31,7 @@ exports.handler = async (req, ctx, res) => {
     if (!link.startsWith('http')) link = 'https://' + link;
 
     // 301 to link of matching code
-    res(null, { statusCode: 301, headers: { Location: link } });
+    res.redirect(301, `${link}`)
   } else {
     // just 301 to homepage
     res(null, { statusCode: 301, headers: { Location: 'http://' + req.headers.host } });
